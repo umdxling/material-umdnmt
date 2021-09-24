@@ -179,10 +179,9 @@ If your model uses a new data pre-/post-processing pipeline, you will need to ad
 Next, follow these steps to create a new docker image and publish a new version of this repo:
 
 1. Update `configs/env_build.sh` with a new model version and other docker build settings.
-2. Build and launch the docker servers to test that everything works:
+2. Build the docker:
 ```
 make docker-build
-make docker-run
 ```
 3. Save the docker into a tar file:
 ```
