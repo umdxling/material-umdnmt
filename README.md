@@ -194,8 +194,6 @@ The following is a brief walkthrough of some of the included files, to aid in de
 
 - *Dockerfile*: creates the docker image
 
-- *entrypoint.sh*: the Docker entrypoint with `translate` directive
-
 - *Makefile*: used for building both the docker, and the internal systems
    - Includes `docker-build` command, which read from configs so developer-users only need to make small changes to rebuild with new settings.
    - Contains commands to build tools and systems, which can be used by developer-users to build everything locally (outside of Docker) and which are also used by the Dockerfile to build tools and systems.
@@ -203,5 +201,7 @@ The following is a brief walkthrough of some of the included files, to aid in de
 - *configs/*: central location for any type of configuration files
 
 - *configs/env_build.sh*: config for `docker build`, including URLs of where to download systems and tools, the MODEL_VERSION, and other docker build settings
+
+- *requirements.txt*: specifies python packages required to run this project
 
 - *scripts/*: central location for any scripts having to do with `translate`
